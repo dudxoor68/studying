@@ -1,0 +1,30 @@
+<html>
+<head>
+    <style>
+        @keyframes shake{
+        10%{ 
+            transform:rotate(20deg);
+        }
+        20%{ 
+            transform:rotate(-20deg);
+        }
+        30%{ 
+            transform:rotate(20deg);
+        }
+        40%{ 
+            transform:rotate(-20deg);
+        }
+    }
+    .aa {
+        animation: shake 2s;
+    }
+    </style>
+</head>
+<body>
+
+    <img class = "aa" src="https://raw.githubusercontent.com/dudxoor68/teamProject/main/front/img/logo.png">
+
+
+</body>
+
+</html>
