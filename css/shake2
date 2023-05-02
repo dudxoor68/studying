@@ -1,0 +1,45 @@
+<html>
+<head>
+ <style>
+             @keyframes shake{
+        10%{ 
+            transform:rotate(-36deg);
+        }
+        25%{ 
+            transform:rotate(396deg);
+        }
+        50%{
+            transform:rotate(360deg);
+        }
+        60%{
+            transform:rotate(396deg);
+        }
+        75%{
+            transform:rotate(-36deg);
+        }
+        100%{
+            transform:rotate(0deg);
+        }
+       
+
+    } 
+    .aa{
+        animation-delay: 2s;
+        animation-iteration-count:infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: normal;
+        animation-name:shake; 
+        animation-duration: 10s;
+        animation-fill-mode: 0%;
+        
+    }
+ </style>
+</head>
+<body>
+
+    <img class = "aa" src="https://raw.githubusercontent.com/dudxoor68/teamProject/main/front/img/logo.png">
+
+
+</body>
+
+</html>
