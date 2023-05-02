@@ -1,0 +1,25 @@
+<select onchange="changeValue(this)">
+  <option value="빨강">빨강색</option>
+  <option value="노랑">노랑색</option>
+  <option value="초록">초록색</option>
+</select>
+
+<div>text: value:</div>
+
+<script>
+    const changeValue = (target) => {
+  // 선택한 option의 value 값
+  console.log(target.value);
+  
+  // option의 text 값
+  console.log(target.options[target.selectedIndex].text);
+}
+
+
+const showValue = (target) => {
+  const value = target.value;
+  const text =  target.options[target.selectedIndex].text;
+  
+  document.querySelector(`div`).innerHTML = `text: ${text} value: ${value}`;
+}
+</script>
