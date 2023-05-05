@@ -1,0 +1,55 @@
+a {
+  color: black;
+  font-weight: bold;
+}
+
+.al .a,
+.b,
+.c {
+  text-align: center; /* div 내에 text 정렬 */
+}
+
+.al div {
+  width: 80px;
+  height: 80px;
+  padding: 20px; /* div 안에서 */
+  margin: 10px; /* div 밖에서*/
+}
+
+.ai div {
+  width: 100px;
+  height: 100px;
+}
+
+.a {
+  background-color: red;
+}
+
+.b {
+  background-color: orange;
+}
+
+.c {
+  background-color: yellow;
+}
+
+.d {
+  background-color: green;
+}
+
+.e {
+  background-color: cyan;
+}
+
+.f {
+  background-color: blue;
+}
+
+.g {
+  background-color: blueviolet;
+}
+
+.al {
+  display: flex; /* div안에있는 것들을 정렬하기 위해*/
+  justify-content: center;
+}
