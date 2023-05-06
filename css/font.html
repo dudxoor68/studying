@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style>
+      .text_box {
+        font-size: 4em; /* 기본 16px의 4배 */
+      }
+      .text_box2 {
+        font-size: 2em; /* 부모요소(text_box)의 2배 */
+      }
+      .text_box3 {
+        font-size: 2rem; /* 부모요소에 상관없이 기본 16px의 2배 */
+      }
+      .box {
+        width: 50vw; /* 전체의 50% 폭 */
+        height: 50vh; /* 전체의 50% 높이 */
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text_box">
+      text1
+      <div class="text_box2">text2</div>
+      <div class="text_box3">text3</div>
+    </div>
+    <div class="box">abc</div>
+  </body>
+</html>
