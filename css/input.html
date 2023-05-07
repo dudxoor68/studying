@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      .select {
+        width: 100px;
+      }
+      .select :checked { /* :checked 띄어있어야 작동 */
+        background-color: red;
+      }
+      .button1:hover { /* :hover 띄어있지않아야 작동 */
+        color: red;
+      }
+      .button2:active { /* :active 띄어있지않아야 작동 */
+        color: aqua;
+      }
+      .button3 {
+        color: red;
+      }
+      .radio :checked{
+       color: red;
+      }
+    </style>
+  </head>
+    <select class="select">
+      <option value="a">a</option>
+      <option value="b">b</option>
+      <option value="c">c</option>
+    </select>
+
+    <button class="button1">button1</button>
+    <button class="button2">button2</button>
+    <button class="button3">button3</button>
+  
+  </body>
+</html>
