@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      button {
+        width: auto;
+        height: auto;
+        font-size: 30px;
+        margin: 5px;
+      }
+      .b p {
+        font-size: 1.2em;
+      }
+      .aaa,
+      .bbb,
+      .ccc {
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="aaa" onclick="change1()">
+      <button onclick="change1()">aaa</button>
+    </div>
+
+    <div class="bbb" id="bbb">
+      <button onclick="change2()"><p>bbb</p></button>
+    </div>
+
+    <div class="ccc">
+      <button onclick="change3()">ccc</button>
+    </div>
+  </body>
+  <script>
+    function change1() {
+      document.getElementsByClassName("aaa")[0].style.backgroundColor = "red";
+    }
+    function change2() {
+      document.getElementById("bbb").style.backgroundColor = "blue";
+      document.getElementById("bbb").className = "b";
+    }
+    function change3() {
+      document.querySelector(".ccc").style.backgroundColor = "cyan";
+    }
+  </script>
+</html>
