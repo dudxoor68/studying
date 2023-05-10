@@ -1,45 +1,46 @@
 <html>
   <head>
     <style>
-      div {
-        height: 50px;
-        float: left;
-      }
-      @media screen and (min-width: 1000px) {
-        div {
-          height: 100px;
-        }
-        .layout_1 {
-          width: 30%;
-          background-color: green;
-        }
-        .layout_2 {
-          margin-left: 5%;
-          width: 45%;
-          background-color: blue;
-        }
-        .layout_3 {
-          margin-left: 5%;
-          width: 15%;
-          background-color: red;
-        }
-      }
-      @media screen and (max-width: 1000px) {
-        .layout_1 {
-          width: 30%;
-          background-color: green;
-        }
-        .layout_2 {
-          margin-left: 5%;
-          width: 65%;
-          background-color: blue;
-        }
-        .layout_3 {
-          margin-left: 5%;
-          width: 100%;
-          background-color: red;
-        }
-      }
+     div {
+  height: 50px;
+  float: left;
+}
+@media screen and (min-width: 1000px) {
+  /* 1000px 이상일때 */
+  div {
+    height: 100px;
+  }
+  .layout_1 {
+    width: 30%;
+    background-color: green;
+  }
+  .layout_2 {
+    margin-left: 5%;
+    width: 45%;
+    background-color: blue;
+  }
+  .layout_3 {
+    margin-left: 5%;
+    width: 15%;
+    background-color: red;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* 1000px 이하일때 */
+  .layout_1 {
+    width: 30%;
+    background-color: green;
+  }
+  .layout_2 {
+    margin-left: 5%;
+    width: 65%;
+    background-color: blue;
+  }
+  .layout_3 {
+    width: 100%;
+    background-color: red;
+  }
+}
     </style>
   </head>
   <body>
